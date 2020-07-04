@@ -24,22 +24,8 @@ function pressKey (char) {
     }, 200);
 }
 
-var h1 = document.querySelector('h1');
-var originalQueue = h1.innerHTML;
-var queue = h1.innerHTML;
 
-function next () {
-    var c = queue[0];
-    queue = queue.slice(1);
-    h1.innerHTML = originalQueue.slice(0, originalQueue.length - queue.length);
-    pressKey(c);
-    if (queue.length) {
-        setTimeout(next, Math.random() * 200 + 50);
-    }
-}
 
-h1.innerHTML = "&nbsp;";
-setTimeout(next, 500);
 
 document.body.addEventListener('keydown', function (e) {
     var key = getKey(e);
