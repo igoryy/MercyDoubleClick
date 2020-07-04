@@ -1,0 +1,55 @@
+body {
+    background-image: url('../img/BG.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #cccccc;
+}
+
+.card-largura{
+    max-width: 50rem;
+}
+
+.imagem-carroussel {
+    object-fit: cover;
+    object-position: 0 50%;
+    height: 400px;
+}
+
+.titulo-carousel {
+    font-family: 'Pacifico', cursive;
+}
+
+.cor-especial {
+   color: grey!important; 
+}
+
+.cor-texto{
+    color: white!important;
+}
+
+.botao-card {
+    background-color: grey;
+    color: white;
+}
+
+.borda-card {
+    border-color: grey;
+}
+
+.card-posicao-imagem{
+    object-fit: cover;
+    /*object-position: 0 80%;*/
+    
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.texto-contato{
+    color: grey;
+}
