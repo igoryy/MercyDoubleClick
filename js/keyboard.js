@@ -13,20 +13,10 @@ function getKey (e) {
     return document.querySelector(selector);
 }
 
-function pressKey (char) {
-    var key = document.querySelector('[data-char*="' + char.toUpperCase() + '"]');
-    if (!key) {
-        return console.warn('No key for', char);
-    }
-    key.setAttribute('data-pressed', 'on');
-    setTimeout(function () {
-        key.removeAttribute('data-pressed');
-    }, 200);
-}
 
 
 
-
+// capturar tecla
 document.body.addEventListener('keydown', function (e) {
     var key = getKey(e);
     if (!key) {
@@ -36,11 +26,13 @@ document.body.addEventListener('keydown', function (e) {
     key.setAttribute('data-pressed', 'on');
 });
 
+//levantar tecla
 document.body.addEventListener('keyup', function (e) {
     var key = getKey(e);
     key && key.removeAttribute('data-pressed');
 });
 
+//funcao tamanho
 function size () {
     var size = keyboard.parentNode.clientWidth / 90;
     keyboard.style.fontSize = size + 'px';
