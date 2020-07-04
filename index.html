@@ -47,14 +47,11 @@
         <div data-key="123" class="key--fn">
           <span>F12</span>
         </div>
-        <div data-key="n/a" class="key--word">
-          <span>pwr</span>
-        </div>
       </div>
       <div class="keyboard__row">
         <div class="key--double" data-key="192">
-          <div>~</div>
-          <div>`</div>
+          <div>"</div>
+          <div>'</div>
         </div>
         <div class="key--double" data-key="49">
           <div>!</div>
@@ -77,7 +74,7 @@
           <div>5</div>
         </div>
         <div class="key--double" data-key="54">
-          <div>^</div>
+          <div>¨</div>
           <div>6</div>
         </div>
         <div class="key--double" data-key="55">
@@ -105,7 +102,7 @@
           <div>=</div>
         </div>
         <div class="key--bottom-right key--word key--w4" data-key="8">
-          <span>delete</span>
+          <span>backspace</span>
         </div>
       </div>
       <div class="keyboard__row">
@@ -123,16 +120,15 @@
         <div class="key--letter" data-char="O">O</div>
         <div class="key--letter" data-char="P">P</div>
         <div class="key--double" data-key="219" data-char="{[">
+          <div>`</div>
+          <div>´</div>
+        </div>
+        <div class="key--double" data-key="221" data-char="}]">
           <div>{</div>
           <div>[</div>
         </div>
-        <div class="key--double" data-key="221" data-char="}]">
-          <div>}</div>
-          <div>]</div>
-        </div>
         <div class="key--double" data-key="220" data-char="|\">
-          <div>|</div>
-          <div>\</div>
+          <div>Enter</div>
         </div>
       </div>
       <div class="keyboard__row">
@@ -148,22 +144,21 @@
         <div class="key--letter" data-char="J">J</div>
         <div class="key--letter" data-char="K">K</div>
         <div class="key--letter" data-char="L">L</div>
-        <div class="key--double" data-key="186">
-          <div>:</div>
-          <div>;</div>
+        <div class="key--letter" data-char="L">Ç</div>
+        <div class="key--double" data-key="221" data-char="}]">
+          <div>^</div>
+          <div>~</div>
         </div>
-        <div class="key--double" data-key="222">
-          <div>"</div>
-          <div>'</div>
-        </div>
-        <div class="key--bottom-right key--word key--w5" data-key="13">
-          <span>return</span>
+        <div class="key--double" data-key="221" data-char="}]">
+          <div>}</div>
+          <div>]</div>
         </div>
       </div>
       <div class="keyboard__row">
         <div class="key--bottom-left key--word key--w6" data-key="16">
           <span>shift</span>
         </div>
+        <div class="key--letter" data-char="Z">\</div>
         <div class="key--letter" data-char="Z">Z</div>
         <div class="key--letter" data-char="X">X</div>
         <div class="key--letter" data-char="C">C</div>
@@ -180,6 +175,10 @@
           <div>.</div>
         </div>
         <div class="key--double" data-key="191">
+          <div>:</div>
+          <div>;</div>
+        </div>
+        <div class="key--double" data-key="191">
           <div>?</div>
           <div>/</div>
         </div>
@@ -189,25 +188,25 @@
       </div>
       <div class="keyboard__row keyboard__row--h3">
         <div class="key--bottom-left key--word">
-          <span>fn</span>
+          <span>ctrl</span>
         </div>
         <div class="key--bottom-left key--word key--w1" data-key="17">
-          <span>control</span>
+          <span>win key</span>
         </div>
         <div class="key--bottom-left key--word key--w1" data-key="18">
-          <span>option</span>
-        </div>
-        <div class="key--bottom-right key--word key--w3" data-key="91">
-          <span>command</span>
+          <span>alt</span>
         </div>
         <div class="key--double key--right key--space" data-key="32" data-char=" ">
           &nbsp;
         </div>
         <div class="key--bottom-left key--word key--w3" data-key="93-R">
-          <span>command</span>
+          <span>alt gr</span>
         </div>
         <div class="key--bottom-left key--word key--w1" data-key="18-R">
-          <span>option</span>
+          <span>win key</span>
+        </div>
+        <div class="key--bottom-left key--word">
+          <span>ctrl</span>
         </div>
         <div data-key="37" class="key--arrow">
           <span>&#9664;</span>
@@ -223,10 +222,13 @@
     </div>
   </main>
 
-  <button type="button" class="btn btn-danger">
-    Profile <span class="badge badge-light">9</span>
-    <span class="sr-only">unread messages</span>
+  <button type="button" class="btn btn-success">
+    Click <span class="badge badge-light">9</span>
   </button>
+  <button type="button" class="btn btn-danger" >
+    Double Click <span class="badge badge-light">9</span>
+  </button>
+
 
   <footer>
     <link rel="stylesheet" href="css/keyboard.css">
